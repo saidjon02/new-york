@@ -13,7 +13,7 @@ function Header() {
     <div className="header">
       <div className="container head-row">
         <div className="head-box">
-          <Link to={'/'}>
+          <Link to={'https://beautiful-new-york.netlify.app/'}>
             <img src={logo} alt="there is a img" />
           </Link>
           <i class={pop ? 'bx bx-x' : 'bx bx-menu'} onClick={() => setPop(!pop)}></i>
