@@ -34,7 +34,7 @@ function Home() {
   return (
     <div className="wrap">
       <Helmet>
-        <title>New York</title>
+        <title>Beautiful New York</title>
         <meta
           name="description"
           content="New York is one of the most famous and largest cities in the USA, known worldwide as an economic, cultural, financial, and artistic hub."
