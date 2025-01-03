@@ -377,7 +377,7 @@ function Home() {
           <Link to={'https://saidjon01.netlify.app'} className="link" target="_blanck">
             https://saidjon01.netlify.app
           </Link>
-          . If you need site my phone number: <span className="link"> +998 94 837 70 08</span>
+          . If you need site my phone number: <Link to={"tel:+998948377008"} className='link'>+998 94 837 70 08</Link>
         </p>
       </div>
       <h1>Beautiful New York City</h1>

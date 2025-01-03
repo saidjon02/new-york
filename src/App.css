@@ -367,14 +367,15 @@ button {
   .connon {
     top: -250px;
   }
-}.sssddd  {
-    width: 100% !important;
-  }
+}
+.sssddd {
+  width: 100% !important;
+}
 @media only screen and (max-width: 1200px) {
   .head-box2 {
     width: 500px;
   }
-  
+
   .head-box img {
     width: 270px;
   }
@@ -395,7 +396,7 @@ button {
   .connon {
     font-size: 70px;
   }
-  
+
   .hs-title {
     color: #ffb714;
     font-size: 36px;
