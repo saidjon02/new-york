@@ -39,7 +39,7 @@ function Home() {
           name="description"
           content="New York is one of the most famous and largest cities in the USA, known worldwide as an economic, cultural, financial, and artistic hub."
         />
-        <link rel="canonical" href="https://beautiful-new-york.netlify.app/" />
+        <link rel="canonical" href="https://beautiful-newyork.netlify.app/" />
       </Helmet>
       <div className="home">
         <div className="parallax">
