@@ -3,7 +3,6 @@ import logo from '../../imgs/logo.png';
 import { Link } from 'react-router-dom';
 import 'boxicons';
 import 'boxicons/css/boxicons.min.css';
-
 function Header() {
   const [pop, setPop] = useState(false);
   const fire = () => {

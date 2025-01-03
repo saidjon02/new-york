@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Header from './components/Header';
 import Not from './components/NotFound';
+
 function App() {
   return (
     <>
