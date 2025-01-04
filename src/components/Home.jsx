@@ -22,8 +22,9 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+// import { img } from 'react-lazy-load-image-component';
+// import 'react-lazy-load-image-component/src/effects/blur.css';
+import LazyLoad from 'react-lazy-load';
 
 function Home() {
   useEffect(() => {
@@ -75,11 +76,13 @@ function Home() {
             </Link>
           </div>
           <div className="home-box">
-            <LazyLoadImage
-              src={nycimg}
-              alt="Beautiful New York"
-              effect="blur" // Blur effekti
-            />
+            <LazyLoad>
+              <img
+                src={nycimg}
+                alt="Beautiful New York"
+                effect="blur" // Blur effekti
+              />
+            </LazyLoad>
           </div>
         </div>
       </div>
@@ -109,7 +112,7 @@ function Home() {
         </p>
         <div className="port-row">
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg1}
@@ -118,7 +121,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg2}
@@ -127,7 +130,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg3}
@@ -136,7 +139,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg4}
@@ -145,7 +148,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg5}
@@ -154,7 +157,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg6}
@@ -163,7 +166,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg7}
@@ -172,7 +175,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg8}
@@ -181,7 +184,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <LazyLoadImage
+            <img
               effect="blur"
               width="100%"
               src={portImg9}
@@ -195,17 +198,20 @@ function Home() {
         <div className="home-section container">
           <div className="food-rowss">
             <div className="home-box order2">
-              <LazyLoadImage
+              <img
                 effect="blur"
                 src="https://www.spectator.co.uk/wp-content/uploads/2020/10/GettyImages-1281735311-820x550-1.jpg"
                 alt="there is a img"
-                className='sssddd'
+                className="sssddd"
               />
             </div>
             <div className="home-box">
               <h2 className="hs-title">Donald Trump</h2>
               <p className="hs-text">
-              Donald Trump — 45-chi AQSh prezidenti, biznesmen, televidenie shaxsiyati va ko‘chmas mulk magnati. U 1946-yil 14-iyunda Queens, New Yorkda tug‘ilgan. Trump ko‘plab biznes imperiyalarini boshqarish, ko‘chmas mulk, mehmonxona va o‘yin-kulgi sanoatlarida faoliyat yuritgan.
+                Donald Trump — 45-chi AQSh prezidenti, biznesmen, televidenie shaxsiyati va ko‘chmas
+                mulk magnati. U 1946-yil 14-iyunda Queens, New Yorkda tug‘ilgan. Trump ko‘plab
+                biznes imperiyalarini boshqarish, ko‘chmas mulk, mehmonxona va o‘yin-kulgi
+                sanoatlarida faoliyat yuritgan.
               </p>
               <Link to={'/not'}>
                 <button className="hs-btn">Donald Trump</button>
@@ -232,26 +238,26 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <LazyLoadImage
+              <img
                 effect="blur"
                 src="https://lp-cms-production.imgix.net/2020-10/GettyRF_534570599.jpg"
                 alt="there is a img"
-                className='sssddd'
+                className="sssddd"
               />
             </div>
           </div>
         </div>
       </div>
-      
+
       <div className="food">
         <div className="home-section container">
           <div className="food-rowss">
             <div className="home-box order2">
-              <LazyLoadImage
+              <img
                 effect="blur"
                 src="https://downtownny.com/wp-content/uploads/2023/12/120423_bkbridge_1024x576-828x576.jpg"
                 alt="there is a img"
-                className='sssddd'
+                className="sssddd"
               />
             </div>
             <div className="home-box">
@@ -286,11 +292,11 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <LazyLoadImage
+              <img
                 effect="blur"
                 src="https://ca-times.brightspotcdn.com/dims4/default/49edb7d/2147483647/strip/true/crop/2000x1347+0+0/resize/1200x808!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2b%2Fd8%2Fd1cca6577d1a553dfae7588b4d93%2Fla-xpm-photo-2001-sep-12-na-sept-11-attack-201105-01"
                 alt="there is a img"
-                className='sssddd'
+                className="sssddd"
               />
             </div>
           </div>
@@ -300,7 +306,7 @@ function Home() {
         <div className="home-section container">
           <div className="food-row">
             <div className="home-box order2">
-              <LazyLoadImage
+              <img
                 effect="blur"
                 src="https://media.cntraveler.com/photos/550b2b2e8857ed037e15d95f/master/pass/one-world-trade-center.jpg"
                 alt="there is a img"
@@ -337,9 +343,9 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <LazyLoadImage
+              <img
                 effect="blur"
-                className='sssddd'
+                className="sssddd"
                 src="https://www.exp1.com/blog/wp-content/uploads/sites/7/2020/06/Times-Square-1-1.jpg"
                 alt="there is a img"
               />
@@ -347,12 +353,12 @@ function Home() {
           </div>
         </div>
       </div>
-      
+
       <div className="food">
         <div className="home-section container">
           <div className="food-row">
             <div className="home-box order2">
-              <LazyLoadImage effect="blur" src={hamburger} alt="there is a img" />
+              <img effect="blur" src={hamburger} alt="there is a img" />
             </div>
             <div className="home-box">
               <h2 className="hs-title">Food NYC</h2>
@@ -377,7 +383,10 @@ function Home() {
           <Link to={'https://saidjon01.netlify.app'} className="link" target="_blanck">
             https://saidjon01.netlify.app
           </Link>
-          . If you need site my phone number: <Link to={"tel:+998948377008"} className='link'>+998 94 837 70 08</Link>
+          . If you need site my phone number:{' '}
+          <Link to={'tel:+998948377008'} className="link">
+            +998 94 837 70 08
+          </Link>
         </p>
       </div>
       <h1>Beautiful New York City</h1>
