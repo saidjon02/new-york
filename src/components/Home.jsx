@@ -22,9 +22,8 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-// import { img } from 'react-lazy-load-image-component';
-// import 'react-lazy-load-image-component/src/effects/blur.css';
-import LazyLoad from 'react-lazy-load';
+import { LazyLoadImage, LazyLoadImageImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Home() {
   useEffect(() => {
@@ -52,13 +51,48 @@ function Home() {
             NEW <span className="spann"></span> YORK
           </h2>
           <div className="box-imgs"></div>
-          <img src={paral1} alt="parallax img" className="parallax-img le4" style={{ zIndex: 9 }} />
-          <img src={paral2} alt="parallax img" className="parallax-img le1" style={{ zIndex: 4 }} />
-          <img src={paral3} alt="parallax img" className="parallax-img le5" style={{ zIndex: 2 }} />
-          <img src={paral4} alt="parallax img" className="parallax-img le3" style={{ zIndex: 5 }} />
-          <img src={paral5} alt="parallax img" className="parallax-img le2" style={{ zIndex: 3 }} />
-          <img src={paral7} alt="parallax img" className="parallax-img le1" style={{ zIndex: 1 }} />
-          <img src={paral8} alt="parallax img" className="parallax-img le5" style={{ zIndex: 1 }} />
+          <img
+            src={paral1}
+            alt="parallax img"
+            className="parallax-img le4"
+            style={{ zIndex: 9 }}
+          />
+          <img
+            src={paral2}
+            alt="parallax img"
+            className="parallax-img le1"
+            style={{ zIndex: 4 }}
+          />
+          <img
+            src={paral3}
+            alt="parallax img"
+            className="parallax-img le5"
+            style={{ zIndex: 2 }}
+          />
+          <img
+            src={paral4}
+            alt="parallax img"
+            className="parallax-img le3"
+            style={{ zIndex: 5 }}
+          />
+          <img
+            src={paral5}
+            alt="parallax img"
+            className="parallax-img le2"
+            style={{ zIndex: 3 }}
+          />
+          <img
+            src={paral7}
+            alt="parallax img"
+            className="parallax-img le1"
+            style={{ zIndex: 1 }}
+          />
+          <img
+            src={paral8}
+            alt="parallax img"
+            className="parallax-img le5"
+            style={{ zIndex: 1 }}
+          />
         </div>
       </div>
       <div className="home-section container">
@@ -76,13 +110,7 @@ function Home() {
             </Link>
           </div>
           <div className="home-box">
-            <LazyLoad>
-              <img
-                src={nycimg}
-                alt="Beautiful New York"
-                effect="blur" // Blur effekti
-              />
-            </LazyLoad>
+            <LazyLoadImage src={nycimg} alt="Beautiful New York" effect="blur" />
           </div>
         </div>
       </div>
@@ -112,7 +140,7 @@ function Home() {
         </p>
         <div className="port-row">
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg1}
@@ -121,7 +149,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg2}
@@ -130,7 +158,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg3}
@@ -139,7 +167,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg4}
@@ -148,7 +176,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg5}
@@ -157,7 +185,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg6}
@@ -166,7 +194,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg7}
@@ -175,7 +203,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg8}
@@ -184,7 +212,7 @@ function Home() {
             />
           </div>
           <div className="p-box-imgs">
-            <img
+            <LazyLoadImage
               effect="blur"
               width="100%"
               src={portImg9}
@@ -198,7 +226,7 @@ function Home() {
         <div className="home-section container">
           <div className="food-rowss">
             <div className="home-box order2">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 src="https://www.spectator.co.uk/wp-content/uploads/2020/10/GettyImages-1281735311-820x550-1.jpg"
                 alt="there is a img"
@@ -238,7 +266,7 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 src="https://lp-cms-production.imgix.net/2020-10/GettyRF_534570599.jpg"
                 alt="there is a img"
@@ -253,7 +281,7 @@ function Home() {
         <div className="home-section container">
           <div className="food-rowss">
             <div className="home-box order2">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 src="https://downtownny.com/wp-content/uploads/2023/12/120423_bkbridge_1024x576-828x576.jpg"
                 alt="there is a img"
@@ -292,7 +320,7 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 src="https://ca-times.brightspotcdn.com/dims4/default/49edb7d/2147483647/strip/true/crop/2000x1347+0+0/resize/1200x808!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2b%2Fd8%2Fd1cca6577d1a553dfae7588b4d93%2Fla-xpm-photo-2001-sep-12-na-sept-11-attack-201105-01"
                 alt="there is a img"
@@ -306,7 +334,7 @@ function Home() {
         <div className="home-section container">
           <div className="food-row">
             <div className="home-box order2">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 src="https://media.cntraveler.com/photos/550b2b2e8857ed037e15d95f/master/pass/one-world-trade-center.jpg"
                 alt="there is a img"
@@ -343,7 +371,7 @@ function Home() {
               </Link>
             </div>
             <div className="home-box order">
-              <img
+              <LazyLoadImage
                 effect="blur"
                 className="sssddd"
                 src="https://www.exp1.com/blog/wp-content/uploads/sites/7/2020/06/Times-Square-1-1.jpg"
@@ -358,7 +386,7 @@ function Home() {
         <div className="home-section container">
           <div className="food-row">
             <div className="home-box order2">
-              <img effect="blur" src={hamburger} alt="there is a img" />
+              <LazyLoadImage effect="blur" src={hamburger} alt="there is a img" />
             </div>
             <div className="home-box">
               <h2 className="hs-title">Food NYC</h2>
