@@ -1,2 +1,2 @@
-https://beautiful-newyork.netlify.app/
-https://beautiful-newyork.netlify.app/not
+https://beautiful-new-york.netlify.app/
+https://beautiful-new-york.netlify.app/not
